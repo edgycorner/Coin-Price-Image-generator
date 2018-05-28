@@ -1,6 +1,6 @@
 <?php
 
-header( 'Cache-Control: max-age=6' );
+
 $coin=$_GET["coin"];
 $currency="usd";
 $amount=1;
