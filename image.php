@@ -37,9 +37,10 @@ imagestring ($image,$font,0,0,$string,$black);
 
 //imagettftext ( $image, 6, 0, 0, 0, $black, 'arial.ttf' , $string);
 
-imagepng ($image,"image.png");
-readfile("image.png");
+imagepng ($image);
+header('Content-type: image/png');
 
+imagepng($image);
 imagedestroy($image); // free up memory
 exit;
 
